@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annamaneni Sreenivasa Naga Phani - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        /* For the timeline line */
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #374151; /* gray-700 */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center glass-effect rounded-full px-6 py-3">
+                <a href="#" class="text-2xl font-bold tracking-tighter">ASNP.</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-cyan-400 transition-colors duration-300">Home</a>
+                    <a href="#about" class="hover:text-cyan-400 transition-colors duration-300">About</a>
+                    <a href="#experience" class="hover:text-cyan-400 transition-colors duration-300">Experience</a>
+                    <a href="#projects" class="hover:text-cyan-400 transition-colors duration-300">Projects</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition-colors duration-300">Contact</a>
+                </nav>
+                 <a href="#contact" class="hidden md:block bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full transition-all duration-300">Hire Me</a>
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800/90 backdrop-blur-sm">
+            <a href="#home" class="block text-center py-3 hover:bg-cyan-500 transition-colors duration-300">Home</a>
+            <a href="#about" class="block text-center py-3 hover:bg-cyan-500 transition-colors duration-300">About</a>
+            <a href="#experience" class="block text-center py-3 hover:bg-cyan-500 transition-colors duration-300">Experience</a>
+            <a href="#projects" class="block text-center py-3 hover:bg-cyan-500 transition-colors duration-300">Projects</a>
+            <a href="#contact" class="block text-center py-3 hover:bg-cyan-500 transition-colors duration-300">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center bg-cover bg-center" style="background-color: black;">
+            <div class="container mx-auto px-4 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <img src="https://placehold.co/150x150/1e293b/ffffff?text=AS" alt="Annamaneni Sreenivasa Naga Phani" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-cyan-500 shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/150x150/1e293b/ffffff?text=ASNP';">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter mb-4">
+                        <span class="text-cyan-400">Annamaneni Sreenivasa Naga Phani</span> - Creative Developer
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+                        I craft elegant, responsive websites and applications focused on performance, usability, and great design.<br>
+                        Welcome to my digital playground — where creativity meets code.
+                    </p>
+                    <a href="#projects" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+                        View My Work
+                    </a>
+                    <div class="mt-12 flex justify-center space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i data-lucide="github" class="w-8 h-8"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i data-lucide="linkedin" class="w-8 h-8"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i data-lucide="twitter" class="w-8 h-8"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 md:py-32">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold tracking-tighter">About Me</h2>
+                    <p class="text-lg text-cyan-400">A little bit about my journey</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3">
+                        <img src="me.jpeg" alt="About Annamaneni Sreenivasa Naga Phani" class="rounded-lg shadow-2xl w-full" onerror="this.onerror=null;this.src='https://placehold.co/600x600/1e293b/ffffff?text=Profile';">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-3xl font-bold mb-4">I'm a Passionate Developer with a Love for Design.</h3>
+                        <p class="text-gray-300 mb-6">
+                            Over the past few years, I’ve grown from exploring design fundamentals to building full-fledged, user-focused web applications. My work strikes a balance between clean aesthetics and functional, scalable code.
+I’ve had the opportunity to contribute to and guide several collaborative projects, where I combined my strengths in visual design and front-end development to create seamless digital experiences. These experiences helped me refine not just my technical skills, but also how I approach teamwork and design thinking.
+I’m always curious, always building, and always open to learning something new.
+                        </p>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                            <div class="bg-gray-800 p-4 rounded-lg text-center"><span class="font-bold">HTML & CSS</span></div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center"><span class="font-bold">JavaScript</span></div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center"><span class="font-bold">React</span></div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center"><span class="font-bold">MVC</span></div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center"><span class="font-bold">Tailwind CSS</span></div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center"><span class="font-bold">Figma</span></div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center"><span class="font-bold">PHP</span></div>
+                            <div class="bg-gray-800 p-4 rounded-lg text-center"><span class="font-bold">CodeIgniter 4</span></div>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1fTczkpwNP6vK32zngKZykFc-jfx74bIN/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="bg-transparent border-2 border-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-white font-bold py-3 px-8 rounded-full transition-all duration-300">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 md:py-32 bg-gray-800/50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold tracking-tighter">Work Experience</h2>
+                    <p class="text-lg text-cyan-400">My professional journey</p>
+                </div>
+                <div class="max-w-3xl mx-auto relative timeline-container">
+                    <!-- Timeline Items -->
+                    <div class="relative pl-8 sm:pl-0">
+                        <div class="sm:flex items-center">
+                            <div class="sm:w-1/2 sm:pr-8">
+                                <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+                                    <h3 class="text-xl font-bold text-white">Software Development Intern</h3>
+                                    <p class="text-gray-400 mb-1">Atul Infotech</p>
+                                    <p class="text-sm text-cyan-400">May 2025 – July 2025</p>
+                                    <ul class="mt-4 text-gray-300 list-disc list-inside space-y-2">
+                                        <li>Contributed to the development of a live, enterprise-grade Document Management System enabling secure file uploads, company-level access control, and role-based sharing.</li>
+                                        <li>Built and optimized core frontend (UI/UX) and backend modules, resolving 10+ critical bugs to enhance system stability and scalability.</li>
+                                        <li>Collaborated with cross-functional teams to deliver production-ready features under tight deadlines, accelerating client on-boarding and ensuring consistent project delivery.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="hidden sm:block absolute left-1/2 top-1/2 w-4 h-4 bg-cyan-500 rounded-full transform -translate-x-1/2 -translate-y-1/2 border-4 border-gray-900"></div>
+                        </div>
+                    </div>
+                    <div class="relative mt-12 pl-8 sm:pl-0">
+                        <div class="sm:flex flex-row-reverse items-center">
+                            <div class="sm:w-1/2 sm:pl-8">
+                                <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+                                    <h3 class="text-xl font-bold text-white">Frontend and Design Lead</h3>
+                                    <p class="text-gray-400 mb-1">IEEE TEMS (VIT Vellore)</p>
+                                    <p class="text-sm text-cyan-400">March 2025 - May 2025</p>
+                                    <ul class="mt-4 text-gray-300 list-disc list-inside space-y-2">
+                                        <li>Led frontend development and UI/UX design for both the web and mobile app versions of a Food Finder application enabling users to locate nearby restaurants efficiently.</li>
+                                        <li>Designed clean, responsive interfaces ensuring seamless experience across devices and platforms.</li>
+                                        <li>Collaborated with the backend team to integrate APIs and present real-time restaurant data effectively.</li>
+                                        <li>Delivered design assets and frontend modules on time under the IEEE TEMS student project initiative.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                           <div class="hidden sm:block absolute left-1/2 top-1/2 w-4 h-4 bg-cyan-500 rounded-full transform -translate-x-1/2 -translate-y-1/2 border-4 border-gray-900"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 md:py-32">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold tracking-tighter">My Projects</h2>
+                    <p class="text-lg text-cyan-400">A selection of my best work</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1: DMS -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <img src="https://placehold.co/600x400/1e293b/38bdf8?text=DMS+Project" alt="Document Management System" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Enterprise Document Management System</h3>
+                            <p class="text-gray-400 mb-4">A live, enterprise-grade system for secure file uploads and role-based sharing, built with PHP and CodeIgniter 4 during my internship.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-500 cursor-not-allowed">Private Project</span>
+                                <a href="#" class="text-gray-500 cursor-not-allowed"><i data-lucide="github" class="w-6 h-6"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2: FoodFindr -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <img src="https://placehold.co/600x400/1e293b/38bdf8?text=FoodFindr+App" alt="VIT FoodFindr App" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">VIT FoodFindr</h3>
+                            <p class="text-gray-400 mb-4">A web and mobile app to help users locate nearby restaurants. Led frontend development and UI/UX design for this IEEE TEMS student project.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-500 cursor-not-allowed">Private Project</span>
+                                <a href="#" class="text-gray-500 cursor-not-allowed"><i data-lucide="github" class="w-6 h-6"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 3: Portfolio -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <img src="https://placehold.co/600x400/1e293b/38bdf8?text=My+Portfolio" alt="Portfolio Website" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Personal Portfolio Website</h3>
+                            <p class="text-gray-400 mb-4">The very website you are on now, designed and built from scratch using HTML, Tailwind CSS, and modern JavaScript.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#home" class="text-cyan-400 hover:underline">Live Demo</a>
+                                <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="github" class="w-6 h-6"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold tracking-tighter">Get In Touch</h2>
+                    <p class="text-lg text-cyan-400">I'm available for freelance work and collaborations.</p>
+                </div>
+                <div class="max-w-2xl mx-auto">
+                    <form id="contact-form" action="https://formspree.io/f/xjkorbqj" method="POST" class="space-y-6">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <input type="text" name="name" placeholder="Your Name" class="w-full bg-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500" required>
+                            <input type="email" name="email" placeholder="Your Email" class="w-full bg-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500" required>
+                        </div>
+                        <textarea name="message" placeholder="Your Message" rows="6" class="w-full bg-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500" required></textarea>
+                        <div class="text-center">
+                            <button type="submit" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-12 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800/50 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <div class="mb-4 flex justify-center space-x-6">
+                <a href="#" class="hover:text-cyan-400 transition-colors duration-300"><i data-lucide="github" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors duration-300"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors duration-300"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+            </div>
+            <p>&copy; 2025 Annamaneni Sreenivasa Naga Phani.</p>
+        </div>
+    </footer>
+
+    <!-- Form Submission Modal -->
+    <div id="form-modal" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center hidden z-[100]">
+        <div class="bg-gray-800 rounded-lg p-8 shadow-2xl max-w-sm w-full text-center transform transition-all scale-95 opacity-0" id="modal-content">
+            <div id="modal-icon" class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center">
+                <!-- Icon will be inserted here by JS -->
+            </div>
+            <h3 id="modal-title" class="text-2xl font-bold mb-2"></h3>
+            <p id="modal-message" class="text-gray-300 mb-6"></p>
+            <button id="modal-close-button" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded-full">Close</button>
+        </div>
+    </div>
+
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Navbar background on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-gray-900/80', 'backdrop-blur-sm', 'shadow-lg');
+            } else {
+                navbar.classList.remove('bg-gray-900/80', 'backdrop-blur-sm', 'shadow-lg');
+            }
+        });
+
+        // --- AJAX Contact Form Submission ---
+        const contactForm = document.getElementById('contact-form');
+        const modal = document.getElementById('form-modal');
+        const modalContent = document.getElementById('modal-content');
+        const modalIcon = document.getElementById('modal-icon');
+        const modalTitle = document.getElementById('modal-title');
+        const modalMessage = document.getElementById('modal-message');
+        const modalCloseButton = document.getElementById('modal-close-button');
+
+        function showModal(title, message, isSuccess) {
+            modalTitle.textContent = title;
+            modalMessage.textContent = message;
+            
+            modalIcon.innerHTML = isSuccess 
+                ? `<i data-lucide="check-circle" class="w-10 h-10 text-green-400"></i>`
+                : `<i data-lucide="x-circle" class="w-10 h-10 text-red-400"></i>`;
+            
+            modalIcon.className = `w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${isSuccess ? 'bg-green-500/10' : 'bg-red-500/10'}`;
+
+            lucide.createIcons(); // Re-render icons inside the modal
+            
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+            }, 10); // Start transition
+        }
+
+        function hideModal() {
+            modalContent.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 200); // Wait for transition to finish
+        }
+
+        modalCloseButton.addEventListener('click', hideModal);
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const data = new FormData(form);
+            const action = form.action;
+
+            // Show a "sending" state on the button
+            const submitButton = form.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+
+            fetch(action, {
+                method: 'POST',
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    showModal('Success!', 'Thank you for your message. I will get back to you soon.', true);
+                    form.reset();
+                } else {
+                    response.json().then(data => {
+                        let errorMessage = 'Oops! There was a problem submitting your form.';
+                        if (Object.hasOwn(data, 'errors')) {
+                            errorMessage = data["errors"].map(error => error["message"]).join(", ");
+                        }
+                        showModal('Error!', errorMessage, false);
+                    })
+                }
+            }).catch(error => {
+                showModal('Error!', 'Oops! There was a network issue. Please try again.', false);
+            }).finally(() => {
+                // Re-enable the button
+                submitButton.disabled = false;
+                submitButton.textContent = 'Send Message';
+            });
+        });
+    </script>
+</body>
+</html>
